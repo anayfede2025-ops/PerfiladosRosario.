@@ -1,71 +1,71 @@
-<!--
-<h2 style="text-align:center">Servicios</h2>
-<div class="services-grid" style="margin-top:18px">
-<article class="service">
-<img src="assets/service1.jpg" alt="Diseño de cejas">
-<h3>Diseño de cejas</h3>
-<p style="color:var(--muted);font-size:14px">Diseño, perfilado y tinte con técnica personalizada.</p>
-</article>
-<article class="service">
-<img src="assets/service2.jpg" alt="Laminado de cejas">
-<h3>Laminado de cejas</h3>
-<p style="color:var(--muted);font-size:14px">Laminado + nutrición para cejas con acabado natural.</p>
-</article>
-<article class="service">
-<img src="assets/service3.jpg" alt="Pestañas">
-<h3>Extensiones y lifting</h3>
-<p style="color:var(--muted);font-size:14px">Pestañas pelo a pelo, volumen y lifting.</p>
-</article>
-</div>
-</section>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Perfilados Rosario — REEMPLAZAR_NOMBRE_NEGOCIO</title>
+<meta name="description" content="Centro de estética Perfilados Rosario — by REEMPLAZAR_PROPIETARIA" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+--accent:#000000; /* negro */
+--dark:#111111;
+--muted:#666666;
+--card:#ffffff;
+--glass: rgba(255,255,255,0.9);
+font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#fdfdfd;color:var(--dark);-webkit-font-smoothing:antialiased}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;background:linear-gradient(180deg,rgba(255,255,255,0.95),rgba(245,245,245,0.9));backdrop-filter:blur(6px);position:sticky;top:0;z-index:50;border-bottom:1px solid #eee}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:52px;height:52px;object-fit:cover;border-radius:10px;filter:grayscale(100%)}
+.brand h1{font-size:18px;margin:0}
+.nav{display:flex;gap:14px;align-items:center}
+.btn{padding:10px 14px;border-radius:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;transition:0.2s}
+.btn:hover{opacity:0.8}
 
 
-<section id="galeria" class="gallery">
-<h2 style="text-align:center">Galería</h2>
-<div class="gallery-grid" style="margin-top:16px">
-<img src="assets/gallery1.jpg" alt="Galería 1">
-<img src="assets/gallery2.jpg" alt="Galería 2">
-<img src="assets/gallery3.jpg" alt="Galería 3">
-<img src="assets/gallery4.jpg" alt="Galería 4">
-</div>
-</section>
+/* Hero */
+.hero{display:grid;grid-template-columns:1fr;align-items:center;padding:56px 20px;gap:24px}
+.hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center}
+.hero-card{background:var(--glass);padding:28px;border-radius:18px;box-shadow:0 8px 30px rgba(16,32,39,0.06)}
+.hero h2{margin:0 0 8px 0;font-size:34px}
+.hero p{margin:0 0 18px 0;color:var(--muted)}
+.contact-small{display:flex;gap:10px;flex-wrap:wrap}
+.pill{padding:8px 12px;border-radius:12px;background:#fff;border:1px solid #ccc;font-weight:600}
 
 
-<section id="contacto" class="contact-section">
-<div class="contact-grid">
-<div>
-<h2>Reservá tu turno</h2>
-<p style="color:var(--muted)">Completá el formulario y te respondemos por WhatsApp o mail.</p>
-<form onsubmit="event.preventDefault();alert('Gracias — tu mensaje fue enviado (simulado).');">
-<input type="text" placeholder="Nombre" required>
-<input type="tel" placeholder="Teléfono" required>
-<input type="email" placeholder="Email (opcional)">
-<textarea rows="4" placeholder="Mensaje / Servicio que querés" required></textarea>
-<button type="submit">Enviar</button>
-</form>
-</div>
+/* Services */
+.services{max-width:1100px;margin:36px auto;padding:0 20px}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.service{background:var(--card);border-radius:14px;padding:14px;box-shadow:0 6px 18px rgba(0,0,0,0.05);text-align:center}
+.service img{width:100%;height:150px;object-fit:cover;border-radius:10px;filter:grayscale(100%)}
+.service h3{margin:12px 0 6px}
 
 
-<aside style="align-self:start">
-<div style="background:#fff;padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(16,32,39,0.04)">
-<h3>Contacto rápido</h3>
-<p style="margin:6px 0"><strong>Tel:</strong> REEMPLAZAR_TELEFONO</p>
-<p style="margin:6px 0"><strong>Dirección:</strong> REEMPLAZAR_DIRECCION</p>
-<p style="margin:6px 0"><strong>Email:</strong> REEMPLAZAR_EMAIL</p>
-<div style="margin-top:8px" class="socials">
-<a href="REEMPLAZAR_LINK_INSTAGRAM" target="_blank">Instagram</a>
-<a href="REEMPLAZAR_LINK_WHATSAPP" target="_blank">WhatsApp</a>
-</div>
-</div>
-</aside>
-</div>
-</section>
+/* Gallery */
+.gallery{max-width:1100px;margin:36px auto;padding:0 20px}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.gallery img{width:100%;height:160px;object-fit:cover;border-radius:10px;filter:grayscale(100%)}
 
 
-<footer>
-<div style="max-width:1100px;margin:0 auto;padding:6px 20px">© <strong>Perfilados Rosario</strong> — by REEMPLAZAR_PROPIETARIA • Todos los derechos reservados</div>
-</footer>
+/* Contact */
+.contact-section{background:linear-gradient(90deg,#f7f7f7,#ffffff);padding:28px;border-radius:14px;margin:36px 20px}
+.contact-grid{display:grid;grid-template-columns:1fr 320px;gap:24px;max-width:1100px;margin:0 auto}
+form input,form textarea{width:100%;padding:12px;border-radius:10px;border:1px solid #ccc;margin-bottom:12px}
+form button{padding:12px 16px;border-radius:10px;border:0;background:var(--dark);color:#fff;font-weight:700}
 
 
-</body>
+footer{padding:24px 20px;text-align:center;color:var(--muted);border-top:1px solid #eee}
+.socials{display:flex;gap:10px;justify-content:center}
+
+
+@media (max-width:880px){
+.hero-inner{grid-template-columns:1fr}
+.contact-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
 </html>
